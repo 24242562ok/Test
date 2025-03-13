@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雲林天氣預報</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .card { background: #f8f8f8; padding: 20px; border-radius: 10px; width: 80%; margin: auto; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        h1 { color: #007bff; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>📍 雲林天氣預報</h1>
+    <div class="card">
+        <p>🕒 時間：{{ time }}</p>
+        <p>🌤 天氣：{{ weather }}</p>
+        <p>☔ 降雨機率：{{ pop }}%</p>
+        <p>🌡 當前氣溫：{{ temp }}°C</p>
+        <p>👕 衣物建議：{{ clothes }}</p>
+        <p>📢 {{ rain_advice }}</p>
+    </div>
+</body>
+</html>
